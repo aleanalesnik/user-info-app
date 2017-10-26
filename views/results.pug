@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	if users
+		h1 You've been matched!
+		br
+		h2 These are the results of your search:
+		p #{users.firstname} #{users.lastname}
+		p Email: #{users.email}
+		a(href='/users') Check out our other users here!
+
+	else 
+		h1 You're not signed up yet! :(
+		h2 Join the party!
+		a(href='/signup') Sign up here

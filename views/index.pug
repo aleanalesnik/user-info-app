@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1 Welcome to Alea's User 
+	h1 Information App! 
+	form(method='POST' action='/search')
+		h2 Do you have any similarities with our users?
+		input(type='text', name='search' placeholder='type in first or last name')
+		br
+		button.btn.btn-primary(type='submit') Submit

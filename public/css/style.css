@@ -1,0 +1,59 @@
+* {
+	margin: 20px;
+	font-family: 'Esteban', serif;
+}
+
+form {
+    border: 1px solid #000000;
+    padding-left: 30px;
+}
+
+input {
+	border: 1px solid #000000;
+	padding: 10px;
+	font-size: 15px;
+}
+
+button {
+	border: 1px solid #000000;
+	font-size: 15px;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 20px;	
+}
+
+.nav ul {
+	margin: 0px;
+    list-style: none;
+    /*border: 1px solid #000000;*/
+}
+
+.nav li {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+/*    font-weight: bold;*/
+	font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E2C1B7;
+}
