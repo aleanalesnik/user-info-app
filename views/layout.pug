@@ -2,14 +2,14 @@ doctype html
 html
 	head
 		link(rel="stylesheet" type="text/css" href="css/style.css")
-		link(href="https://fonts.googleapis.com/css?family=Esteban|Montserrat:600" rel="stylesheet")
-		body
-			.nav
-				ul
-					li.home
-					a(href='/') home
-					li.users
-					a(href='/users') all users
-					li.signup
-					a(href='/signup') sign up
-		block content
+		link(href='https://fonts.googleapis.com/css?family=Abril+Fatface', rel='stylesheet')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		title User Info App
+	body
+		.topnav
+			a(href='/users') Users
+			a(href='/signup') Sign Up
+			a.active(href='/') Home
+		.footer
+			p Alea Incorporated
+	block content

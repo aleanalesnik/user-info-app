@@ -1,13 +1,15 @@
 extends layout
 
 block content
-	h1 Sign up here!
-	form(method='POST' action='/signup')
-		h3 :)
+	h2 Sign up here!
+	form(id= 'signup' method='POST' action='/signup')
 		input(type='text', name='firstname' placeholder='First Name')
+		br
 		br
 		input(type='text', name='lastname' placeholder='Last Name')
 		br
+		br
 		input(type='text', name='email' placeholder='Email Address')
+		br
 		br
 		button.btn.btn-primary(type='submit') Submit

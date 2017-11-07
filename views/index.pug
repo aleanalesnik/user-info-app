@@ -1,10 +1,46 @@
 extends layout
 
 block content
-	h1 Welcome to Alea's User 
-	h1 Information App! 
-	form(method='POST' action='/search')
-		h2 Do you have any similarities with our users?
-		input(type='text', name='search' placeholder='type in first or last name')
+	h1 Join the Party!
+	form(method='POST' action='/search' autocomplete='off')
+		h3 Do you have any similarities with our users?
+		p Type in your first or last name to find out!
+		input(id='searchbar', type='text', name='search' placeholder='search our users')
+		ul(id='dropdown')
 		br
 		button.btn.btn-primary(type='submit') Submit
+	script(src='https://code.jquery.com/jquery-3.2.1.js')
+	script.
+		console.log("HI")
+		$(document).ready(() => {
+
+			var list = []; 
+			
+			$.get('/userlist', function(data) {
+					list = data.matched;
+					console.log(list);
+			}); 
+
+			$('#searchbar').keyup(() => {
+				var string = "";
+				var input = $('#searchbar').val();
+				console.log(input);
+
+				var matches = list.filter(function (element){
+					return element.includes(input);
+				})
+				console.log(matches);
+				
+				
+				for (var i = 0; i < matches.length; i++) {
+					string += `<li class="suggest", name="${matches[i]}"> ${matches[i]} </li>`
+				}
+				$('#dropdown').html(`${string}`);
+				
+				$('.suggest').on('click', function () {
+					var click = $(this).attr('name');
+					$('#searchbar').val(`${click}`);
+					console.log(click);
+				})	
+			});
+		});
