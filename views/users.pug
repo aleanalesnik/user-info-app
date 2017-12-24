@@ -1,6 +1,7 @@
 extends layout
 
 block content
-	h1 Our Users :)
-	each banana in users
-		p #{banana.firstname} #{banana.lastname}
+	h2 Our Users!
+	.scroll
+		each user in users
+			p #{user.firstname} #{user.lastname}

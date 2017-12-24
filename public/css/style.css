@@ -1,59 +1,106 @@
-* {
-	margin: 20px;
-	font-family: 'Esteban', serif;
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 form {
-    border: 1px solid #000000;
-    padding-left: 30px;
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+#signup {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+}
+
+.scroll {
+    height: 300px;
+    width: 300px; 
+    overflow: auto; 
+    overflow-x: hidden; 
+    border: 2px solid #000000;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 input {
-	border: 1px solid #000000;
-	padding: 10px;
-	font-size: 15px;
+    font-family: 'Helvetica', sans-serif;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 15px;
 }
 
 button {
-	border: 1px solid #000000;
-	font-size: 15px;
+    font-family: 'Helvetica', sans-serif;
+    border: 1px solid #000000;
+    font-size: 15px;
+    background-color: #D3D3D3;
+    padding: 10px;
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 45px;
+    color: black;
+    font-size: 50px;
 }
 
 h2 {
-	font-size: 20px;	
+    font-size: 30px;
 }
 
-.nav ul {
-	margin: 0px;
-    list-style: none;
-    /*border: 1px solid #000000;*/
+h3 {
+    font-size: 20px;
 }
 
-.nav li {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    padding-left: 50px;
-}
-
-.nav a {
-    text-decoration: none;
-/*    font-weight: bold;*/
-	font-size: 20px;
-    color: black;
-    padding-bottom: 10px;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #E2C1B7;
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   background-color: black;
 }
